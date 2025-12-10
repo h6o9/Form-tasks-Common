@@ -9,6 +9,8 @@ use App\Models\SideMenuHasPermission;
 if (!function_exists('getPermissionsData')) {
     function getPermissionsData($id)
     {
+
+		//to get all permissions related data for a specific role id
         $roles = Role::find($id);
         $permissions = Permission::all(); 
         $sideMenus = SideMenue::all();
